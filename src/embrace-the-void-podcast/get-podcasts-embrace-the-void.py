@@ -81,7 +81,7 @@ if __name__ == "__main__":
             next_page_from_older_ext(older_link_ext) if older_link_ext else None
         )
 
-    print(f'Found {len(posts_info)} podcasts.')
-    
+    print(f"Found {len(posts_info)} podcasts.")
+
     for (pub_date, raw_title, download_link) in track(posts_info):
         download_file(pub_date, raw_title, download_link)
