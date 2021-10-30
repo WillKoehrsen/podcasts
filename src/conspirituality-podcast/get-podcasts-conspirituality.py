@@ -4,14 +4,11 @@ from pathlib import Path
 from dateutil import parser
 from bs4 import BeautifulSoup
 
+from ..utils import HEADERS
 from pathvalidate import sanitize_filename
 
 FILE_DIR = Path(Path.home() / "Downloads" / "podcasts" / "conspirituality-podcast")
 BASE_URL = "https://conspirituality.net/"
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36"
-}
 
 
 def process_content(content):
