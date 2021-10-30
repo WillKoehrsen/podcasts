@@ -1,9 +1,8 @@
 import time
-import requests
+from datetime import datetime
 from pathlib import Path
 
-from datetime import datetime
-
+import requests
 from bs4 import BeautifulSoup
 from rich.progress import track
 

@@ -1,9 +1,9 @@
 import re
-import requests
 from pathlib import Path
 
-from dateutil import parser
+import requests
 from bs4 import BeautifulSoup
+from dateutil import parser
 
 
 def main():

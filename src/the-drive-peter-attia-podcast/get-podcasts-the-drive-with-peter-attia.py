@@ -1,14 +1,15 @@
-import time
+# import time
+# from datetime import datetime
+# from pathlib import Path
+
 import requests
-from pathlib import Path
-
-from datetime import datetime
-
 from bs4 import BeautifulSoup
-from rich.progress import track
+
+# from rich.progress import track
+from src.utils import HEADERS
 
 POD_URL = "https://peterattiamd.com/podcast/archive/"
-from src.utils import HEADERS
+
 
 result = requests.get(POD_URL, headers=HEADERS)
 soup = BeautifulSoup(result.content)

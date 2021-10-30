@@ -9,6 +9,7 @@ rich = "*"
 
 [dev-packages]
 black = "==21.9b0"
+isort = "*"
 
 [requires]
 python_version = "3.9"
