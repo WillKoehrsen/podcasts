@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 
 def main():
     file_dir = Path(
-        Path.home() / "Downloads" / "podcasts" / "decoding-the-gurus-podcast"
+        Path.home() / "git" / "podcasts" / "src" / "decoding-the-gurus-podcast"
     )
     file_dir.mkdir() if not file_dir.exists() else None
 
